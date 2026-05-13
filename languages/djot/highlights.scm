@@ -185,6 +185,9 @@
 (key_value (key) @property)
 (key_value (value) @string)
 
+; Boolean attribute shorthand (djot-php enhancement): `{reversed}`, `{flag}`.
+(boolean_attribute (key) @property)
+
 ; Links.
 (link_text ["[" "]"] @punctuation.bracket)
 (autolink ["<" ">"] @punctuation.bracket)
