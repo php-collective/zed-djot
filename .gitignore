@@ -5,3 +5,6 @@ tmp/
 node_modules/
 .idea/
 .vscode/
+
+# Build artifacts created by Zed when installing the dev extension.
+/grammars/
