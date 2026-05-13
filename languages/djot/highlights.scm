@@ -1,29 +1,20 @@
-; Headings — generic + per-level via marker matching.
-(heading) @title
+; Headings — the grammar exposes heading1..heading6 as distinct named nodes.
+[
+  (heading1)
+  (heading2)
+  (heading3)
+  (heading4)
+  (heading5)
+  (heading6)
+] @title
 
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "# "))
-
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "## "))
-
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "### "))
-
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "#### "))
-
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "##### "))
-
-((heading
-  (marker) @_heading.marker) @title
-  (#eq? @_heading.marker "###### "))
+; Hash marker prefix on each heading.
+(heading1 (marker) @punctuation.special)
+(heading2 (marker) @punctuation.special)
+(heading3 (marker) @punctuation.special)
+(heading4 (marker) @punctuation.special)
+(heading5 (marker) @punctuation.special)
+(heading6 (marker) @punctuation.special)
 
 ; Thematic break.
 (thematic_break) @punctuation.special
@@ -138,16 +129,6 @@
   (emphasis_end)
   (strong_begin)
   (strong_end)
-  (superscript_begin)
-  (superscript_end)
-  (subscript_begin)
-  (subscript_end)
-  (highlighted_begin)
-  (highlighted_end)
-  (insert_begin)
-  (insert_end)
-  (delete_begin)
-  (delete_end)
   (verbatim_marker_begin)
   (verbatim_marker_end)
   (math_marker)
@@ -164,10 +145,7 @@
 (raw_inline) @text.literal
 
 ; Comments.
-[
-  (comment)
-  (inline_comment)
-] @comment
+(comment) @comment
 
 ; Spans and attribute braces.
 (span ["[" "]"] @punctuation.bracket)

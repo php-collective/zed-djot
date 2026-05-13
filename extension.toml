@@ -12,4 +12,11 @@ capabilities = []
 
 [grammars.djot]
 repository = "https://codeberg.org/treeman/tree-sitter-djot"
-rev = "74fac1f53c6d52aeac104b6874e5506be6d0cfe6"
+# Pinned pre-`isalnum` SHA. The grammar's commit e154f17 (Jan 2025) added a
+# call to `isalnum()` in the external scanner; Zed's WASM runtime cannot
+# resolve that libc import and refuses to load the language. Until the
+# upstream fix lands (or we fork and patch), staying on 886601b is the
+# tradeoff: stable Zed support, missing ~9 months of recent improvements
+# (double `$$` math, longer alpha lists, LaTeX math injection, a handful
+# of edge-case fixes).
+rev = "886601b67d1f4690173a4925c214343c30704d32"
