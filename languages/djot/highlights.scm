@@ -60,9 +60,11 @@
 
 (language_marker) @punctuation.delimiter
 
-; Block quote.
-(block_quote) @comment
-
+; Block quote — color the `>` marker only; leave the inner content
+; styled by its own captures (so the quoted paragraph reads as normal
+; text, not as a comment). The upstream nvim queries used
+; @markup.quote here; Zed has no equivalent, and using @comment would
+; gray out the entire quote block (which is misleading).
 (block_quote_marker) @punctuation.special
 
 ; Tables.
