@@ -40,9 +40,21 @@ dsfdsf
 
 ## djot-php extensions
 
+*[HTML]: HyperText Markup Language
+*[CSS]: Cascading Style Sheets
+
 A reference to [[Setup]] and [[setup|the guide]] inline.
 
 Thanks to @alice and @bob-c for the review.
+
+![Example](example.png)
+
+^ Figure 1: the canonical example.
+
+%%%
+A multi-line draft comment that won't render
+in the HTML output. Useful for inline TODOs.
+%%%
 
 ## Code injection
 

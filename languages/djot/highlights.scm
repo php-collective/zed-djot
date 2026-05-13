@@ -232,3 +232,14 @@
 ; djot-php extensions (carried in the php-collective fork of the grammar).
 (wikilink) @link_text
 (mention) @link_text
+
+; Fenced multi-line comment %%%…%%% (djot-php enhancement).
+(fenced_comment_block) @comment
+
+; Abbreviation definitions  *[KEY]: expansion  (PHP Markdown Extra style).
+(abbreviation_definition (abbreviation_marker) @punctuation.special)
+(abbreviation_definition (abbreviation_expansion) @string)
+
+; Standalone caption  ^ caption text  (djot-php enhancement).
+(caption (caption_marker) @punctuation.special)
+(caption (caption_content) @emphasis)
