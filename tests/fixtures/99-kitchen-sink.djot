@@ -1,0 +1,78 @@
+---
+title: Kitchen sink
+---
+
+# Kitchen sink {#kitchen-sink .demo}
+
+A paragraph with _italic_, *bold*, `code`, and a [link](https://example.com).
+
+Reference-style: [the example][ex] elsewhere.
+
+[ex]: https://example.com
+
+Autolink: <https://djot.net>.
+
+## Lists
+
+- Item with `inline code`
+- Item with [a link](#kitchen-sink)
+  - Nested
+    - Deeper
+
+1. First {.first}
+2. Second
+3. Third
+
+## Tables
+
+| Col 1 | Col 2 |
+|-------|-------|
+| a     | b     |
+| c     | d     |
+
+## Code injection
+
+``` php
+$x = new \Djot\DjotConverter();
+echo $x->convert('# Hi');
+```
+
+``` rust
+fn main() {
+    println!("hi");
+}
+```
+
+## Math
+
+Inline $a^2 + b^2 = c^2$ and display:
+
+$$
+\int_0^\infty e^{-x^2} \, dx = \frac{\sqrt{\pi}}{2}
+$$
+
+## Divs
+
+{.warning}
+:::
+Be careful with `unsafe` blocks.
+:::
+
+::: tip
+Run `tree-sitter test` before opening a PR.
+:::
+
+## Footnotes
+
+A sentence with a footnote.[^one]
+
+[^one]: The footnote content.
+
+## Comments
+
+%%%
+Block-level fenced comment.
+Can span multiple paragraphs.
+%%%
+
+Inline {% short comment %} in prose.
