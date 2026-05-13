@@ -16,4 +16,4 @@ capabilities = []
 # cleanly. Upstream tracker: https://codeberg.org/treeman/tree-sitter-djot
 # The fork README documents what diverges from upstream.
 repository = "https://github.com/php-collective/tree-sitter-djot"
-rev = "ff000b13616c4157891a70e8712b7e1fcfa55a72"
+rev = "586b48da8b99dcd41257064813c204235c63b7ef"
