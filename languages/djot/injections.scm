@@ -15,10 +15,14 @@
   (raw_inline_attribute
     (language) @injection.language))
 
-; Frontmatter blocks carry their language (defaults to yaml when bare ---).
+; Frontmatter blocks: default to YAML so bare `---` matter is highlighted.
+; Tree-sitter's grammar emits an optional (language) child for `---toml` etc.,
+; but Zed's injection layer only honors the first matching pattern reliably,
+; so we always set yaml here. Authors needing TOML/JSON frontmatter can override
+; this pattern in a downstream extension.
 (frontmatter
-  (language) @injection.language
-  (frontmatter_content) @injection.content)
+  (frontmatter_content) @injection.content
+  (#set! injection.language "yaml"))
 
 ; Math: render with LaTeX highlighting.
 (math
