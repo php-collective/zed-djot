@@ -16,16 +16,10 @@ Autolink: <https://djot.net>.
 
 - Item with `inline code`
 - Item with [a link](#kitchen-sink)
-  - Nested
-    - Deeper
-    - sdf
 
-dsfdsf
-1. dfsdf
-2. sdf
-    2. dfsdf
-    3. dfsdf
-    4. dfsdf
+  - Nested
+
+    - Deeper
 
 1. First {.first}
 2. Second
@@ -47,7 +41,7 @@ A reference to [[Setup]] and [[setup|the guide]] inline.
 
 Thanks to @alice and @bob-c for the review.
 
-![Example](example.png)
+![Example](https://raw.githubusercontent.com/php-collective/zed-djot/master/icons/djot.svg)
 ^ Figure 1: the canonical example (no blank line above caption).
 
 > A blockquote with a caption attached directly.
@@ -98,9 +92,11 @@ A sentence with a footnote.[^one]
 
 ## Comments
 
+%%%%
 %%%
 Block-level fenced comment.
 Can span multiple paragraphs.
 %%%
+%%%%
 
 Inline {% short comment %} in prose.
