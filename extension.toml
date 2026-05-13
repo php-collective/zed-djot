@@ -1,0 +1,11 @@
+id = "djot"
+name = "Djot"
+description = "Syntax highlighting for djot, a modern light markup language"
+version = "0.1.0"
+schema_version = 1
+authors = ["Mark Scherer <dereuromark@gmail.com>"]
+repository = "https://github.com/php-collective/zed-djot"
+
+[grammars.djot]
+repository = "https://codeberg.org/treeman/tree-sitter-djot"
+rev = "74fac1f53c6d52aeac104b6874e5506be6d0cfe6"
