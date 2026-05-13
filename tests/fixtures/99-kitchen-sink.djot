@@ -18,6 +18,14 @@ Autolink: <https://djot.net>.
 - Item with [a link](#kitchen-sink)
   - Nested
     - Deeper
+    - sdf
+
+dsfdsf
+1. dfsdf
+2. sdf
+    2. dfsdf
+    3. dfsdf
+    4. dfsdf
 
 1. First {.first}
 2. Second
@@ -29,6 +37,12 @@ Autolink: <https://djot.net>.
 |-------|-------|
 | a     | b     |
 | c     | d     |
+
+## djot-php extensions
+
+A reference to [[Setup]] and [[setup|the guide]] inline.
+
+Thanks to @alice and @bob-c for the review.
 
 ## Code injection
 

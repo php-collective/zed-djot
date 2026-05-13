@@ -228,3 +228,7 @@
 (todo) @keyword
 (note) @comment
 (fixme) @keyword
+
+; djot-php extensions (carried in the php-collective fork of the grammar).
+(wikilink) @link_text
+(mention) @link_text
