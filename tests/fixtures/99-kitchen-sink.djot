@@ -48,8 +48,10 @@ A reference to [[Setup]] and [[setup|the guide]] inline.
 Thanks to @alice and @bob-c for the review.
 
 ![Example](example.png)
+^ Figure 1: the canonical example (no blank line above caption).
 
-^ Figure 1: the canonical example.
+> A blockquote with a caption attached directly.
+^ Quote attribution.
 
 %%%
 A multi-line draft comment that won't render
