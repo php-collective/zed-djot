@@ -13,6 +13,8 @@ Syntax highlighting tuned to the [`php-collective/djot-php`](https://github.com/
 - Bracket matching, autoclose pairs (`[]`, `()`, `{}`, `*`, `_`, `` ` ``).
 - Outline view shows your document's heading structure.
 - Block-comment toggle uses djot's `{% %}` form.
+- djot-php syntax extensions: wikilinks `[[Page]]`, mentions (`@name`), abbreviation definitions `*[KEY]:`, fenced comments `%%%`, boolean attributes `{flag}`, standalone captions `^ text`, and `TODO`/`NOTE`/`FIXME` markers.
+- Snippets for common djot blocks — type a prefix (`frontmatter`, `code`, `code-group`, `note`, `tabs`, `div`, `table`, `link`, `image`, `footnote`, `math`) and press <kbd>Tab</kbd>.
 
 ## Install (dev extension)
 
@@ -54,7 +56,7 @@ Then `Ctrl+Shift+P` → **`task: spawn`** → pick the task. A browser tab opens
 
 - Submit to the Zed extension registry once the dev-extension period proves out.
 - Icon-theme contribution for `.djot` files in the file tree.
-- Coverage for djot-php-specific syntax (wikilinks `[[Page]]`, user mentions, abbreviation definitions `*[KEY]:`, fenced comments `%%%`) — pending upstream grammar PRs on [codeberg.org/treeman/tree-sitter-djot](https://codeberg.org/treeman/tree-sitter-djot).
+- Citation highlighting (`[@key]`, `[@a; @b]`) — pending a `citation` node in the [`php-collective/tree-sitter-djot`](https://github.com/php-collective/tree-sitter-djot) grammar fork.
 
 ## Credits
 

@@ -1,0 +1,57 @@
+{
+  "Frontmatter": {
+    "prefix": "frontmatter",
+    "body": ["---", "title: ${1:Title}", "---", "", "$0"],
+    "description": "YAML frontmatter block"
+  },
+  "Fenced code block": {
+    "prefix": "code",
+    "body": ["``` ${1:php}", "$0", "```"],
+    "description": "Fenced code block with a language"
+  },
+  "Code group": {
+    "prefix": "code-group",
+    "body": ["::: code-group", "``` ${1:php} [${2:Label}]", "$0", "```", ":::"],
+    "description": "Tabbed code group (djot-php CodeGroupExtension)"
+  },
+  "Admonition": {
+    "prefix": "note",
+    "body": ["::: ${1:note}", "$0", ":::"],
+    "description": "Admonition div: note/tip/info/warning/caution (djot-php AdmonitionExtension)"
+  },
+  "Tabs": {
+    "prefix": "tabs",
+    "body": [":::: tabs", "::: tab ${1:One}", "$0", ":::", "::::"],
+    "description": "Tabbed content (djot-php TabsExtension)"
+  },
+  "Fenced div": {
+    "prefix": "div",
+    "body": ["::: ${1:.class}", "$0", ":::"],
+    "description": "Fenced div with a class or attributes"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": ["| ${1:Header} | ${2:Header} |", "|---|---|", "| ${3:Cell} | ${4:Cell} |", "$0"],
+    "description": "Pipe table with a header row"
+  },
+  "Link": {
+    "prefix": "link",
+    "body": ["[${1:text}](${2:https://})$0"],
+    "description": "Inline link"
+  },
+  "Image": {
+    "prefix": "image",
+    "body": ["![${1:alt}](${2:path})$0"],
+    "description": "Inline image"
+  },
+  "Footnote": {
+    "prefix": "footnote",
+    "body": ["[^${1:id}]$0", "", "[^${1:id}]: ${2:definition}"],
+    "description": "Footnote reference and its definition"
+  },
+  "Math block": {
+    "prefix": "math",
+    "body": ["\\$\\$", "$0", "\\$\\$"],
+    "description": "Display math block"
+  }
+}
