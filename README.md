@@ -14,6 +14,7 @@ Syntax highlighting tuned to the [`php-collective/djot-php`](https://github.com/
 - Outline view shows your document's heading structure.
 - Block-comment toggle uses djot's `{% %}` form.
 - djot-php syntax extensions: wikilinks `[[Page]]`, mentions (`@name`), abbreviation definitions `*[KEY]:`, fenced comments `%%%`, boolean attributes `{flag}`, standalone captions `^ text`, and `TODO`/`NOTE`/`FIXME` markers.
+- Snippets for common djot blocks — type a prefix (`frontmatter`, `code`, `code-group`, `note`, `tabs`, `div`, `table`, `link`, `image`, `footnote`, `math`) and press <kbd>Tab</kbd>.
 
 ## Install (dev extension)
 
