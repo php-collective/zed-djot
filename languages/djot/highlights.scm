@@ -74,6 +74,9 @@
 (table_row "|" @punctuation.special)
 (table_separator) @punctuation.special
 
+; Column alignment markers (`:--`, `--:`, `:-:`) in the separator row.
+(table_cell_alignment) @punctuation.special
+
 (table_caption (marker) @punctuation.special)
 (table_caption) @emphasis
 
