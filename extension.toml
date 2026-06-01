@@ -1,5 +1,5 @@
-id = "djot"
-name = "Djot"
+id = "djot-php"
+name = "Djot (PHP)"
 description = "Syntax highlighting for djot, a modern light markup language"
 version = "0.1.0"
 schema_version = 1
